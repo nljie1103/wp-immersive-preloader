@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/WordPress-5.8+-21759B?style=flat-square&logo=wordpress&logoColor=white" alt="WordPress 5.8+">
   <img src="https://img.shields.io/badge/PHP-7.4+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 7.4+">
-  <img src="https://img.shields.io/badge/Version-1.0.4-blue?style=flat-square" alt="Version 1.0.4">
+  <img src="https://img.shields.io/badge/Version-1.0.5-blue?style=flat-square" alt="Version 1.0.5">
   <img src="https://img.shields.io/badge/License-GPLv2%2B-green?style=flat-square" alt="GPLv2 or later License">
   <img src="https://img.shields.io/badge/Theme-Compatible-success?style=flat-square" alt="Theme Compatible">
 </p>
@@ -61,6 +61,7 @@
 - WordPress 原生**媒体上传器**（选择 Logo）
 - WordPress 原生**颜色选择器**（背景色）
 - 数字 / 复选框 / 单选高级选项
+- GitHub 在线检查更新与一键覆盖升级
 
 **🛡 容错与兼容**
 - Zibll / Astra / Divi / GeneratePress / Hello / 经典主题全兼容
@@ -190,7 +191,8 @@ jiuliu-immersive-preloader/
 ├── includes/                        # PHP 类文件
 │   ├── class-jip-settings.php       #   设置类（默认值、读取、清洗）
 │   ├── class-jip-admin.php          #   后台菜单 + 设置页面 + 资源入队
-│   └── class-jip-frontend.php       #   前台预加载注入（双路径）
+│   ├── class-jip-frontend.php       #   前台预加载注入（双路径）
+│   └── class-jip-updater.php        #   GitHub 在线更新
 │
 └── assets/                          # 静态资源
     ├── css/

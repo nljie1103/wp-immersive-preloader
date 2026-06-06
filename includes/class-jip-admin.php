@@ -110,6 +110,8 @@ class JIP_Admin {
 			'jip-admin',
 			'JIP_ADMIN',
 			array(
+				'ajaxUrl'     => admin_url( 'admin-ajax.php' ),
+				'nonce'       => wp_create_nonce( 'jip_admin_nonce' ),
 				'mediaTitle'  => '选择 Logo 图片',
 				'mediaButton' => '使用此图片',
 				'defaultLogo' => JIP_PLUGIN_URL . 'assets/images/default-logo.svg',
@@ -277,6 +279,51 @@ class JIP_Admin {
 
 				<?php submit_button( '保存设置' ); ?>
 			</form>
+
+			<div class="jip-card jip-update-card">
+				<h2 class="jip-card-title">在线更新</h2>
+				<table class="form-table" role="presentation">
+					<tr>
+						<th scope="row">当前版本</th>
+						<td><strong>v<?php echo esc_html( JIP_VERSION ); ?></strong></td>
+					</tr>
+					<tr>
+						<th scope="row">远程仓库</th>
+						<td>
+							<a href="https://github.com/nljie1103/wp-immersive-preloader" target="_blank" rel="noopener">github.com/nljie1103/wp-immersive-preloader</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">检查更新</th>
+						<td>
+							<button type="button" class="button button-secondary" id="jip-check-update">
+								<span class="dashicons dashicons-update"></span>
+								立即检查更新
+							</button>
+							<button type="button" class="button" id="jip-do-update" disabled>
+								<span class="dashicons dashicons-download"></span>
+								一键在线更新
+							</button>
+							<div id="jip-update-status" class="jip-update-status">点击“立即检查更新”来对比本地与远程版本。</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">变更日志（最新）</th>
+						<td>
+							<pre id="jip-changelog" class="jip-changelog">（暂未获取，请先点击“立即检查更新”）</pre>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">数据保留说明</th>
+						<td>
+							<div class="jip-safety-note">
+								<strong>设置会保留。</strong><br>
+								插件设置存储在 WordPress 数据库的 <code>jiuliu_immersive_preloader_options</code> 中；在线更新只覆盖插件目录下的代码文件，不会删除数据库设置。更新前还会自动快照到 <code>jip_settings_backup</code>。
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
 
 			<div class="jip-footer">
 				<p>作者：<a href="https://www.jiuliu.org" target="_blank" rel="noopener">九流</a> · 许可证：GPLv2+ · 版本：<?php echo esc_html( JIP_VERSION ); ?></p>

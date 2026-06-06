@@ -4,7 +4,7 @@ Tags: preloader, loading, animation, splash, immersive
 Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 不会。所有静态资源都很小（CSS+JS 不到 20KB），且使用 GPU 加速动画。
 
 == 变更日志 ==
+
+= 1.0.5 =
+* 新增后台在线更新功能，可从 GitHub 检查最新版本并一键更新插件文件。
+* 更新流程会在覆盖文件前备份当前设置，更新后保留已有配置。
+* 后台设置页新增远程版本状态、变更日志预览与数据保留说明。
 
 = 1.0.4 =
 * 更新开源许可证为 GPLv2 or later，并补齐标准 LICENSE 文件。
