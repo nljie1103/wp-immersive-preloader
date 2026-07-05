@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/WordPress-5.8+-21759B?style=flat-square&logo=wordpress&logoColor=white" alt="WordPress 5.8+">
   <img src="https://img.shields.io/badge/PHP-7.4+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 7.4+">
-  <img src="https://img.shields.io/badge/Version-1.0.5-blue?style=flat-square" alt="Version 1.0.5">
+  <img src="https://img.shields.io/badge/Version-1.0.6-blue?style=flat-square" alt="Version 1.0.6">
   <img src="https://img.shields.io/badge/License-GPLv2%2B-green?style=flat-square" alt="GPLv2 or later License">
   <img src="https://img.shields.io/badge/Theme-Compatible-success?style=flat-square" alt="Theme Compatible">
 </p>
@@ -124,7 +124,7 @@ git clone https://github.com/nljie1103/wp-immersive-preloader.git jiuliu-immersi
 
 ### 开始配置
 
-1. WordPress 后台左侧菜单（外观与插件之间）→ **首页与加载开屏**
+1. WordPress 后台左侧菜单（外观与插件之间）→ **沉浸式预加载**
 2. 启用插件、选择心仪的效果、上传自定义 Logo、调整时长
 3. 保存设置 → 强制刷新（Ctrl+F5）首页查看效果
 
@@ -268,7 +268,7 @@ jiuliu-immersive-preloader/
 请按顺序排查：
 
 1. 确认插件已启用（插件页能看到"九流沉浸式预加载"且为已启用状态）
-2. 进入"首页与加载开屏" 检查"启用沉浸式预加载"是否为「启用」
+2. 进入"沉浸式预加载" 检查"启用沉浸式预加载"是否为「启用」
 3. 默认仅在首页显示，请访问首页 URL（不是 /about 等子页面）
 4. 强制刷新（Ctrl+F5）跳过浏览器缓存
 5. 如装有缓存插件（WP Rocket / WP Super Cache）请清空缓存
@@ -281,7 +281,7 @@ jiuliu-immersive-preloader/
 <details>
 <summary><strong>Q2: 我想在所有页面都显示预加载，怎么办？</strong></summary>
 
-进入"首页与加载开屏" → 高级设置 → 取消勾选「仅在首页显示」→ 保存。
+进入"沉浸式预加载" → 高级设置 → 取消勾选「仅在首页显示」→ 保存。
 
 </details>
 
@@ -299,7 +299,7 @@ jiuliu-immersive-preloader/
 <details>
 <summary><strong>Q4: 如何让预加载时间更短 / 更长？</strong></summary>
 
-进入"首页与加载开屏" → 基础设置：
+进入"沉浸式预加载" → 基础设置：
 
 - 想要更短：把"最小展示时长"调小（例如 0.3 秒）
 - 想要更长：把"最小展示时长"调大（例如 3 秒）
@@ -314,7 +314,7 @@ jiuliu-immersive-preloader/
 
 两种方式任选其一：
 
-- **临时关闭**：进入"首页与加载开屏" → 启用沉浸式预加载 → 选「禁用」→ 保存
+- **临时关闭**：进入"沉浸式预加载" → 启用沉浸式预加载 → 选「禁用」→ 保存
 - **永久卸载**：插件页 → 找到"九流沉浸式预加载" → 停用 → 删除（卸载时自动清理所有数据）
 
 </details>

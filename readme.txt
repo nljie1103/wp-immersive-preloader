@@ -4,7 +4,7 @@ Tags: preloader, loading, animation, splash, immersive
 Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,7 +39,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 1. 进入「插件」→「安装插件」→「上传插件」
 2. 选择压缩包 jiuliu-immersive-preloader.zip 并安装
 3. 激活插件
-4. 在后台左侧菜单「首页与加载开屏」中配置参数
+4. 在后台左侧菜单「沉浸式预加载」中配置参数
 
 == 常见问题 ==
 
@@ -53,6 +53,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 不会。所有静态资源都很小（CSS+JS 不到 20KB），且使用 GPU 加速动画。
 
 == 变更日志 ==
+
+= 1.0.6 =
+* 统一 Plugin URI、作者主页与九流插件套件品牌信息。
+* 统一后台菜单图标与设置页标题区样式。
+* 将后台菜单名称统一为“沉浸式预加载”。
 
 = 1.0.5 =
 * 新增后台在线更新功能，可从 GitHub 检查最新版本并一键更新插件文件。

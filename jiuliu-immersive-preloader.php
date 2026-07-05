@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: 九流沉浸式预加载
- * Plugin URI: https://www.jiuliu.org
+ * Plugin URI: https://github.com/nljie1103/wp-immersive-preloader
  * Description: 为 WordPress 网站提供多种炫酷的沉浸式预加载效果，完全掩盖页面加载过程，实现丝滑的开门式进入体验。支持自定义 Logo、动画参数、效果切换，无需修改任何主题代码，一键启用即用。
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: 九流
  * Author URI: https://www.jiuliu.org
  * License: GPLv2 or later
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // 定义插件常量
-define( 'JIP_VERSION', '1.0.5' );
+define( 'JIP_VERSION', '1.0.6' );
 define( 'JIP_PLUGIN_FILE', __FILE__ );
 define( 'JIP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'JIP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

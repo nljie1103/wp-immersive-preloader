@@ -50,11 +50,11 @@ class JIP_Admin {
 	public function register_menu() {
 		add_menu_page(
 			'九流沉浸式预加载',
-			'首页与加载开屏',
+			'沉浸式预加载',
 			'manage_options',
 			'jiuliu-immersive-preloader',
 			array( $this, 'render_settings_page' ),
-			'dashicons-animation',
+			'dashicons-admin-customizer',
 			61.5
 		);
 	}
@@ -130,12 +130,13 @@ class JIP_Admin {
 		$effects = JIP_Settings::get_effects();
 		?>
 		<div class="wrap jip-wrap">
-			<h1 class="jip-title">
-				<span class="dashicons dashicons-animation"></span>
-				九流沉浸式预加载
-				<span class="jip-version">v<?php echo esc_html( JIP_VERSION ); ?></span>
-			</h1>
-			<p class="description jip-subtitle">为 WordPress 网站提供炫酷的沉浸式预加载效果，实现丝滑的开门式进入体验。</p>
+			<div class="jiuliu-admin-header">
+				<div>
+					<h1><span class="dashicons dashicons-admin-customizer"></span>九流沉浸式预加载</h1>
+					<p class="jiuliu-admin-subtitle">为 WordPress 网站提供炫酷的沉浸式预加载效果，实现丝滑的开门式进入体验。</p>
+				</div>
+				<span class="jiuliu-version-badge">v<?php echo esc_html( JIP_VERSION ); ?></span>
+			</div>
 
 			<form method="post" action="options.php" class="jip-form">
 				<?php settings_fields( 'jip_settings_group' ); ?>
