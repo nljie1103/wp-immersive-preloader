@@ -1,0 +1,26 @@
+name: Mark maintenance moved
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/mark-maintenance-moved.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  mark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Add frozen repository notice
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import import Path
+          PY
